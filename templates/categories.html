@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Farmer's market</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header class="header">
+        <a href="/" class="logo"> <i class="fas fa-shopping-basket"></i> Farm Fresh </a>
+    
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/features.html">Features</a>
+            <a href="/products.html">Products</a>
+            <a href="/categories.html">Categories</a>
+            <a href="/Aboutus.html">Aboutus</a>
+        </nav>
+    
+        <div class="other-links">
+            <button id="btn-login"><a href="/login">Login</a></button>
+            <button id="btn-signup"><a href="/signup">Sign up</a></button>
+        </div>
+    
+        
+    </header>   
+
+
+
+
+
+<section class="categories" id="categories">
+    
+    <h1 class="heading"> product <span>categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='category-img-1.png') }}" alt="category-img-1 Image">
+            <h3>Fresh Vegetables</h3>
+            <p>upto 50% off</p>
+            <a href="/Vegetables.html" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="{{ url_for('static', filename='category-img-2.png') }}" alt="category-img-2 Image">
+            <h3>Fresh Fruits</h3>
+            <p>upto 50% off</p>
+            <a href="/Fruits.html" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='category-img-3.png') }}" alt="category-img-3 Image">
+            <h3>Millets</h3>
+            <p>upto 35% off</p>
+            <a href="/Millets.html" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='category-img-4.png') }}" alt="category-img-4 Image">
+            <h3>Spices</h3>
+            <p>upto 30% off</p>
+            <a href="/Spices.html" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='category-img-5.png') }}" alt="category-img-5 Image">
+            <h3>Pulses</h3>
+            <p>upto 20% off</p>
+            <a href="/Pulses.html" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='category-img-6.png') }}" alt="category-img-6 Image">
+            <h3>Cooking Oils and more</h3>
+            <p>upto 10% off</p>
+            <a href="/Others.html" class="btn">shop now</a>
+        </div>
+
+    </div>
+
+</section> 
+
+
+
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> Farm Fresh <i class="fas fa-shopping-basket"></i> </h3>
+            <p>No:100,Nammalvar Nagar,12th Street,Chennai-12.</p>
+            <div class="share">
+                <a href="#" class="fab fa-whatsapp"></a>
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +91 123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +91 111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> farmfresh12@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Chennai,India - 600110.</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="/" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="/features.html" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="/products.html" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="/categories.html" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="/Aboutus.html" class="links"> <i class="fas fa-arrow-right"></i> Aboutus </a>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> Farm Fresh Team </span> | all rights reserved </div>
+
+</section>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Farmer's market</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+
+    <div class="container1">
+        <form action="{{ url_for('login') }}" method="POST">
+            <h2>Login</h2>
+            <div style="height: 40px;">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+            </div>
+            <div class="input-field">
+                <input type="text" name="username" required>
+                <label>Enter Username</label>
+            </div>
+            <div class="input-field">
+                <input type="password" name="password" required>
+                <label>Enter password</label>
+            </div>
+            <button type="submit">Log In</button>
+            <div class="Create-account">
+                <p>Don't have an account? <a href="/signup">Create account</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+ 
+    
+    
+
+
+    

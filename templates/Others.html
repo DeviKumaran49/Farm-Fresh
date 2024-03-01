@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Farmer's market</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header class="header">
+        <a href="/" class="logo"> <i class="fas fa-shopping-basket"></i> Farm Fresh </a>
+    
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/features.html">Features</a>
+            <a href="/products.html">Products</a>
+            <a href="/categories.html">Categories</a>
+            <a href="/Aboutus.html">Aboutus</a>
+        </nav>
+    
+        <div class="other-links">
+            <button id="btn-login"><a href="/login">Login</a></button>
+            <button id="btn-signup"><a href="/signup">Sign up</a></button>
+            <a href="/cartform.html"><i class="fa fa-shopping-cart "></i><span class="badge" style="background-color: #ffffff;border-radius: 100%;" id="cartincrement">0</span></a>
+        </div>
+    
+        
+    </header>   
+
+
+    <section class="products" id="products">
+
+        <h1 class="heading"> our <span> Cooking Oils</span>and More </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="{{ url_for('static', filename='Coconut Oil.png') }}" alt="Coconut Oil Image">
+                <h3>Coconut Oil</h3>
+                <div class="price"> Rs.100/- <span> Rs.130/- </span> </div>
+                <div class="quantity">
+                    <span>quantity :  </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Litre </span>
+                </div>    
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button>  
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Mustard Oil.png') }}" alt="Mustard Oil Image">
+                <h3>Mustard Oil</h3>
+                <div class="price"> Rs.120/- <span> RS.130/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Litre </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Sesame Oil.png') }}" alt="Sesame Oil Image">
+                <h3>Sesame Oil</h3>
+                <div class="price"> Rs.150/- <span> Rs.160/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Litre </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Palm Oil.png') }}" alt="Palm Oil Image">
+                <h3>Palm Oil</h3>
+                <div class="price"> Rs.90/- <span> Rs.100/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Litre </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Groundnut Oil.png') }}" alt="Groundnut Oil Image">
+                <h3>Groundnut Oil</h3>
+                <div class="price"> Rs.110/- <span> Rs.120/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Litre </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+            
+            <div class="box">
+                <img src="{{ url_for('static', filename='Sunflower Oil.png') }}" alt="Sunflower Oil Image">
+                <h3>Sunflower Oil</h3>
+                <div class="price"> Rs.130/- <span> Rs.140/- </span> </div>
+                <div class="quantity">
+                    <span>quantity :  </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Litre </span>
+                </div>    
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Castor Oil.png') }}" alt="Castor Oil Image">
+                <h3>Castor Oil</h3>
+                <div class="price"> Rs.140/- <span> RS.150/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Litre </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Corn Oil.png') }}" alt="Corn Oil Image">
+                <h3>Corn Oil</h3>
+                <div class="price"> Rs.140/- <span> Rs.150/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Litre </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Almond Oil.png') }}" alt="Almond Oil Image">
+                <h3>Almond Oil</h3>
+                <div class="price"> Rs.150/- <span> Rs.160/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Litre </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Olive Oil.png') }}" alt="Olive Oil Image">
+                <h3>Olive Oil</h3>
+                <div class="price"> Rs.150/- <span> Rs.160/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Litre </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+            
+            <div class="box">
+                <img src="{{ url_for('static', filename='Banana Leaf.png') }}" alt="Banana Leaf Image">
+                <h3>Banana Leaf</h3>
+                <div class="price"> Rs.30/- <span> Rs.35/- </span> </div>
+                <div class="quantity">
+                    <span>quantity :  </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Bunch </span>
+                </div>    
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Tender Coconut.png') }}" alt="Tender Coconut Image">
+                <h3>Tender Coconut</h3>
+                <div class="price"> Rs.25/- <span> RS.30/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Piece </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Fresh Honey.png') }}" alt="Fresh Honey Image">
+                <h3>Fresh Honey</h3>
+                <div class="price"> Rs.150/- <span> Rs.160/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Litre </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Coriander Leaves.png') }}" alt="Coriander Leaves Image">
+                <h3>Coriander Leaves</h3>
+                <div class="price"> Rs.8/- <span> Rs.10/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Bunch </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Mint Leaves.png') }}" alt="Mint Leaves Image">
+                <h3>Mint Leaves</h3>
+                <div class="price"> Rs.10/- <span> Rs.15/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Bunch </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+            
+            <div class="box">
+                <img src="{{ url_for('static', filename='Mandara Leaf Plate.png') }}" alt="Mandara Leaf Plate Image">
+                <h3>Mandara Leaf Plate</h3>
+                <div class="price"> Rs.10/- <span> Rs.15/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / Bunch </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+        </div>
+    
+    </section>
+
+
+
+
+<section class="footer">
+
+    <div class="box-container">
+    
+        <div class="box">
+            <h3> Farm Fresh <i class="fas fa-shopping-basket"></i> </h3>
+                <p>No:100,Nammalvar Nagar,12th Street,Chennai-12.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-whatsapp"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+         </div>
+    
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +91 123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +91 111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> farmfresh12@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Chennai,India - 600110.</a>
+        </div>
+    
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="/" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="/features.html" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="/products.html" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="/categories.html" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="/Aboutus.html" class="links"> <i class="fas fa-arrow-right"></i> Aboutus </a>
+        </div>
+    
+    </div>
+    
+    <div class="credit"> created by <span> Farm Fresh Team </span> | all rights reserved </div>
+    
+</section>
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+</body>
+</html>
+    

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Farmer's market</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header class="header">
+        <a href="/" class="logo"> <i class="fas fa-shopping-basket"></i> Farm Fresh </a>
+    
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/features.html">Features</a>
+            <a href="/products.html">Products</a>
+            <a href="/categories.html">Categories</a>
+            <a href="/Aboutus.html">Aboutus</a>
+        </nav>
+    
+        <div class="other-links">
+            <button id="btn-login"><a href="/login">Login</a></button>
+            <button id="btn-signup"><a href="/signup">Sign up</a></button>
+            <a href="/cartform.html"><i class="fa fa-shopping-cart "></i><span class="badge" style="background-color: #ffffff;border-radius: 100%;" id="cartincrement">0</span></a>
+        </div>
+    
+        
+    </header>   
+
+    <section class="products" id="products">
+
+        <h1 class="heading"> our <span>Millets</span> </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="{{ url_for('static', filename='Rice.png') }}" alt="Rice Image">
+                <h3>Rice</h3>
+                <div class="price"> Rs.40/- <span> Rs.50/- </span> </div>
+                <div class="quantity">
+                    <span>quantity :  </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / kg </span>
+                </div>    
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Wheat.png') }}" alt="Wheat Image">
+                <h3>Wheat</h3>
+                <div class="price"> Rs.40/- <span> RS.50/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / kg </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Maize.png') }}" alt="Maize Image">
+                <h3>Maize</h3>
+                <div class="price"> Rs.35/- <span> Rs.40/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / kg </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Pearl Millet.png') }}" alt="Pearl Millet Image">
+                <h3>Pearl Millet</h3>
+                <div class="price"> Rs.50/- <span> Rs.55/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / kg </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Ragi.png') }}" alt="Ragi Image">
+                <h3>Ragi</h3>
+                <div class="price"> Rs.45/- <span> Rs.55/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / kg </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+            
+            <div class="box">
+                <img src="{{ url_for('static', filename='Horsegram.png') }}" alt="Horsegram Image">
+                <h3>Horsegram</h3>
+                <div class="price"> Rs.40/- <span> Rs.45/- </span> </div>
+                <div class="quantity">
+                    <span>quantity :  </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / kg </span>
+                </div>    
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Sorghum.png') }}" alt="Sorghum Image">
+                <h3>Sorghum</h3>
+                <div class="price"> Rs.45/- <span> RS.50/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / kg </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Kudo Millet.png') }}" alt="Kudo Millet Image">
+                <h3>Kudo Millet</h3>
+                <div class="price"> Rs.50/- <span> Rs.55/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / kg </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Foxtail Millet.png') }}" alt="Foxtail Millet Image">
+                <h3>Foxtail Millet</h3>
+                <div class="price"> Rs.40/- <span> Rs.45/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / kg </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Burnyard Millet.png') }}" alt="Burnyard Millet Image">
+                <h3>Burnyard Millet</h3>
+                <div class="price"> Rs.50/- <span> Rs.55/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / kg </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Little Millet.png') }}" alt="Little Millet Image">
+                <h3>Little Millet</h3>
+                <div class="price"> Rs.40/- <span> Rs.45/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / kg </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Proso Millet.png') }}" alt="Proso Millet Image">
+                <h3>Proso Millet</h3>
+                <div class="price"> Rs.40/- <span> Rs.45/- </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> / kg </span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button id="shopnow" onclick="incrementButton()">Add to cart</button> 
+            </div>
+
+            
+        </div>
+    
+    </div>
+
+</section>
+
+
+
+
+<section class="footer">
+
+    <div class="box-container">
+    
+        <div class="box">
+            <h3> Farm Fresh <i class="fas fa-shopping-basket"></i> </h3>
+                <p>No:100,Nammalvar Nagar,12th Street,Chennai-12.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-whatsapp"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+         </div>
+    
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +91 123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +91 111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> farmfresh12@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Chennai,India - 600110.</a>
+        </div>
+    
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="/" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="/features.html" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="/products.html" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="/categories.html" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="/Aboutus.html" class="links"> <i class="fas fa-arrow-right"></i> Aboutus </a>
+        </div>
+    
+    </div>
+    
+    <div class="credit"> created by <span> Farm Fresh Team </span> | all rights reserved </div>
+    
+</section>
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+</body>
+</html>
+    
