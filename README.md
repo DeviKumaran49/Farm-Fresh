@@ -43,27 +43,22 @@ AI integration refers to the blending of artificial intelligence technologies fo
 
 
 ## Team Members
-1.Devi K 
+1 . Devi K 
 
-Cloud Deployment
+Cloud Deployment , Readme file
 
-Readme file
+2 . Abinaya P
 
-2.Abinaya P
+Frontend Developer , Database
 
-Frontend Developer
+3 . Leena P 
 
-Database
+Backend Developer , Voice over 
 
-3.Leena P 
-
-Backend Developer
-
-Voice over 
-
-4.Rubini V
+4 . Rubini V
 
 Tester
+
 
 ## Resource Group: 
  It is a logical container for resources that are deployed within a cloud environment.
@@ -75,6 +70,7 @@ This project utilizes different Azure services to guarantee scalability, reliabi
 
 ## Web App: 
 The e-commerce platform is hosted with Flask handling the backend, while the frontend utilizes HTML, CSS, and JavaScript.
+
  
 ## Virtual Network: 
 Ensures a secure and isolated network environment for the project.
@@ -86,6 +82,14 @@ Secures communication between the web app and other Azure resources.
 
 ## Monitor: 
 Monitoring in the cloud is used for maintaining availability, performance, and security in dynamic and scalable computing environments.
+
+
+
+##Setup Instructions
+Clone the repository: git clone 
+Install dependencies: pip install -r requirements.txt
+Run the Flask application: python app.py
+Access the application via the browser: http://localhost:5000
 
 
 #Screenshots:
