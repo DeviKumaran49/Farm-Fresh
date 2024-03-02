@@ -6,7 +6,7 @@ This e-commerce grocery website facilitates the direct purchase of organic produ
 
 ## Overview 
 
-     Welcome to farm fresh e-commerce grocery website.  This project aims to deliver the oragnic products directly from the farmers, without any mediators.  By this we can get the products on affordable price and organic products.  Through the support of the farmers, we make sure that every grain, seed, and ingredient that ends up on your table is not only delicious but also healthy and safe. Below, you'll find information about the technologies used, team members, and details on the Azure services integration.
+Welcome to farm fresh e-commerce grocery website.  This project aims to deliver the oragnic products directly from the farmers, without any mediators.  By this we can get the products on affordable price and organic products.  Through the support of the farmers, we make sure that every grain, seed, and ingredient that ends up on your table is not only delicious but also healthy and safe. Below, you'll find information about the technologies used, team members, and details on the Azure services integration.
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ Cloud Deployment
 Monitoring
 
 
-Technologies Used :
+## Technologies Used
 
 HTML : language used to organize web pages.
 
@@ -80,7 +80,8 @@ Secures communication between the web app and other Azure resources.
 ## Monitor: 
 Monitoring in the cloud is used for maintaining availability, performance, and security in dynamic and scalable computing environments.
 
-Screenshots:
+
+#Screenshots:
 
 
 
