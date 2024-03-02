@@ -148,6 +148,17 @@ Access the application via the browser: http://localhost:5000
 
 
 
+##Video url
+
+https://www.youtube.com/watch?v=NkGqBSYGHeU
+
+
+##Demo url
+
+farmfresh1.azurewebsites.net
+
+
+
 
 
 
