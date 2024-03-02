@@ -85,7 +85,7 @@ Monitoring in the cloud is used for maintaining availability, performance, and s
 
 
 
-##Setup Instructions
+## Setup Instructions
 
 Clone the repository: git clone https://github.com/DeviKumaran49/Farm-Fresh
 
@@ -97,6 +97,11 @@ Access the application via the browser: http://localhost:5000
 
 
 #Screenshots:
+
+
+![Screenshot (23)](https://github.com/DeviKumaran49/Farm-Fresh/assets/153902764/7a605033-1ee5-460f-8301-294940596eb5)
+
+
 
 
 
