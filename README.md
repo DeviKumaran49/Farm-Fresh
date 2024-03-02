@@ -86,9 +86,13 @@ Monitoring in the cloud is used for maintaining availability, performance, and s
 
 
 ##Setup Instructions
-Clone the repository: git clone 
+
+Clone the repository: git clone https://github.com/DeviKumaran49/Farm-Fresh
+
 Install dependencies: pip install -r requirements.txt
+
 Run the Flask application: python app.py
+
 Access the application via the browser: http://localhost:5000
 
 
