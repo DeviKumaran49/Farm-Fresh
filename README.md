@@ -39,10 +39,11 @@ SQLite : provides a lightweight disk-based database.
 
 Azure: A cloud platform used for hosting and deployment.
 
-AI integration refers to the blending of artificial intelligence technologies for a range of applications, including chatbots and recommendation systems.
+AI integration : The blending of artificial intelligence technologies for a range of applications, including chatbots and recommendation systems.
 
 
 ## Team Members
+
 1 . Devi K 
 
 Cloud Deployment , Readme file
@@ -58,6 +59,9 @@ Backend Developer , Voice over
 4 . Rubini V
 
 Tester
+
+
+## Azure Services Integration 
 
 
 ## Resource Group: 
