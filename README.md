@@ -44,18 +44,25 @@ AI integration refers to the blending of artificial intelligence technologies fo
 
 ## Team Members
 1.Devi K 
+
 Cloud Deployment
+
 Readme file
 
-2.Abinaya B 
+2.Abinaya P
+
 Frontend Developer
+
 Database
 
 3.Leena P 
+
 Backend Developer
+
 Voice over 
 
-4.Rubini V 
+4.Rubini V
+
 Tester
 
 ## Resource Group: 
