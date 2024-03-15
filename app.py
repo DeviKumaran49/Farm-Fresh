@@ -12,7 +12,7 @@ sqlconnection.close()
 def home():
     return render_template("home.html")
 
-@app.route('chatai.html')
+@app.route('/chatai.html')
 def chatai():
     return render_template("chatai.html")
 
